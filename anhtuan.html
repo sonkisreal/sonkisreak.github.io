@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Tuấn Bin</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      /* Make the body take up full viewport height */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chờ một chút...</title>
+    <link rel="shortcut icon" href="img/Favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-  <div style="display: flex; justify-content: center; align-items: center;">
-    <button type="button" autofocus onclick="alert('Tuấn bin đẹp trai nhưng mà không có ny :) ')">1</button>
+    <div class="container-video" id="container-video">
+        <video class="video" id="video" autoplay muted loop>
+            <source src="vid/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-    <body>
-      <div style="display: flex; justify-content: center; align-items: center;">
-        <button onclick="window.location.href='2'">2</button>
-      </div>
-    </body>
+    <div class="container" id="container">
+        <img class="gif" src="img/dots.gif" alt="Dots">
+        <h2 class="text">Đang xác minh bạn là người. Quá trình này có thể mất vài giây.</h2>
+        <p class="text">sonkisreal.tech/anhtuan.html cần đánh giá tính bảo mật kết nối của bạn trước khi tiếp tục..</p>
+        <div class="counter" id="counter">3</div>
+        <div class="recaptcha-container" id="recaptcha-container">
+            <div class="button-container">
+                <div class="button" id="button" onclick="showVideo()"></div>
+            </div>
+            <div class="text-container">
+                <p>Xác minh bạn là con người</p>
+            </div>
+            <div class="image-container">
+                <img src="img/RecaptchaLogo.png" alt="Recaptcha">
+                <p>Privacy - Terms</p>
+            </div>
+        </div>
+        <a class="link" href="https://github.com/Pablo-Restrepo/Troll-Page-Scream">Hiệu suất & tính bảo mật của
+            GoDaddy</a>
+        <p>Ray ID: 348759h65g34h</p>
+    </div>
+</body>
 
-    <body>
-      <div style="display: flex; justify-content: center; align-items: center;">
-        <button onclick="window.location.href='https://i.imgur.com/i7CEqBl.jpeg'">3</button>
-      </div>
-    </body>
+<script src="main.js"></script>
 
 </html>
